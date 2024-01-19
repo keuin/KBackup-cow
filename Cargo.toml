@@ -1,0 +1,17 @@
+[package]
+name = "kbackup-cow"
+version = "0.1.0"
+edition = "2021"
+authors = ["Keuin <keuinx@gmail.com>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate_type = ["cdylib"]
+path = "src/lib/lib.rs"
+
+[dependencies]
+jni = "0.21.1"
+log = "0.4.20"
+env_logger = "0.10.2"
+nix = "0.27.1"
